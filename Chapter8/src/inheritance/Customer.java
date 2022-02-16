@@ -11,20 +11,20 @@ public class Customer {
 	
 	
 	
-	public Customer() {
-		customerGrade = "SILVER";
-		bonusRatio = 0.01;
-		
-		System.out.println("Customer() 호출");
-	}
-	/*
+//	public Customer() {
+//		customerGrade = "SILVER";
+//		bonusRatio = 0.01;
+//		
+//		System.out.println("Customer() 호출");
+//	}
 	public Customer(int customerID, String customerName) {
 		this.customerID = customerID;
 		this.customerName = customerName;
 		customerGrade = "SILVER";
 		bonusRatio = 0.01;
+		System.out.println("Customer(int, String) 호출");
 	}
-	*/
+	
 	public int calcPrice(int price) { // 이 메소드에 if를 통해서 실버가 아닌 다른 등급일시를 적용할 수 있지만 바랍직하지 못한 코드
 		bonusPoint += price * bonusRatio;
 		return price;
