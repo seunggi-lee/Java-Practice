@@ -18,6 +18,6 @@ public class CustomerTest1 {
 		
 //		System.out.println(customerLee.showCustomerInfo());
 		System.out.println(customerKim.showCustomerInfo());
+		//커밋이 제대로 안된다. 테스트용
 	}
-
 }
