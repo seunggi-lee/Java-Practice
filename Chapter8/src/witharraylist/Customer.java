@@ -1,22 +1,22 @@
-package inheritance;
+package witharraylist;
 
 public class Customer {
 	protected int customerID;
 	protected String customerName;
 	protected String customerGrade;
-	int bonusPoint;
-	double bonusRatio;
+	public int bonusPoint;
+	public double bonusRatio;
 //	private int saleRatio;
 //	private int agentID;
 	
 	
 	
-//	public Customer() {
-//		customerGrade = "SILVER";
-//		bonusRatio = 0.01;
-//		
-//		System.out.println("Customer() 호출");
-//	}
+	public Customer() {
+		customerGrade = "SILVER";
+		bonusRatio = 0.01;
+		
+		System.out.println("Customer() 호출");
+	}
 	public Customer(int customerID, String customerName) {
 		this.customerID = customerID;
 		this.customerName = customerName;

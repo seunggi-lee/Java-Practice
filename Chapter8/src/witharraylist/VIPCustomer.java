@@ -1,14 +1,15 @@
-package inheritance;
+package witharraylist;
 
-public class VipCustomer extends Customer{
-	private double saleRatio;
-	private int agentID;
+import inheritance.Customer;
+
+public class VIPCustomer extends Customer{
+	public double saleRatio;
+	public int agentID;
 	
-	public VipCustomer(int customerID, String customerName, int agentID) {
+	public VIPCustomer(int customerID, String customerName, int agentID) {
 		
 		super(customerID, customerName); // 상위 클래스를 참조하는 것인데 선언하지 않아도 자동 호출
 		customerGrade = "VIP";
-		bonusRatio = 0.05;
 		saleRatio = 0.1;
 		this.agentID = agentID;
 		
@@ -17,7 +18,6 @@ public class VipCustomer extends Customer{
 //		System.out.println("VIPCustomer(int, String) 호출");
 	}
 	public int calcPrice(int price) { // overriding
-		bonusPoint += price * bonusRatio;
 		return price;
 	}
 	
