@@ -1,3 +1,5 @@
+//¾î·Æ´Ù..
+
 package recrucive;
 
 import java.util.Scanner;
